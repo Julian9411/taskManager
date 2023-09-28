@@ -1,4 +1,4 @@
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet, setupIonicReact } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 
@@ -29,7 +29,6 @@ setupIonicReact();
 
 const App: React.FC = () => {
   const { isLogin, users } = useSelector((state: RootState) => state.users);
-  console.log('first', users)
   return (
     <IonApp>
       <IonReactRouter>
